@@ -11,7 +11,14 @@ export class Tree {
       const getTreeType = TreePolling.GetTreeType(c, n);
       this.type = getTreeType;
    }
+   get xCoord() {
+      return this.x;
+   }
+
+   get yCoord() {
+      return this.y;
+   }
    draw() {
-      console.log('Draw tree', this.x, this.y, this.type);
+      this.type.draw(this);
    }
 }
