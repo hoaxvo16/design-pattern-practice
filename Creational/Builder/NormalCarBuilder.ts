@@ -1,7 +1,7 @@
 import { Car } from './Car';
 import { ICarBuilder } from './CarBuilder';
 export class NormalCarBuilder implements ICarBuilder {
-   car: Car = new Car();
+   protected car: Car = new Car();
    buildChair(chair: string) {
       this.car.setChair(chair);
       return this;

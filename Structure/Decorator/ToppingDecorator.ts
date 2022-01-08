@@ -1,6 +1,6 @@
 import { IPizza } from './IPizza';
 
-export class ToppingDecorator implements IPizza {
+export abstract class ToppingDecorator implements IPizza {
    pizza: IPizza;
 
    constructor(pizza: IPizza) {
